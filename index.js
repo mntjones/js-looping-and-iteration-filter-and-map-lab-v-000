@@ -14,5 +14,7 @@ function driverNamesWithRevenueOver(drivers, revenue) {
 }
 
 function exactMatch(drivers, att_obj) {
-  
+  return drivers.filter(function(driver) {
+    return driver.attobj[0] === att_obj[1]; 
+  });
 }
