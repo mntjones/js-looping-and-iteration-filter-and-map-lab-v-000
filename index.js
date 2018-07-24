@@ -21,3 +21,7 @@ function exactMatch(drivers, att_obj) {
   });
 }
 
+function exactMatchToList(drivers, att_obj) {
+  const driver_objects = exactMatch(drivers,att_obj)
+  return drivers.map(function(driver) { return driver.name })
+}
