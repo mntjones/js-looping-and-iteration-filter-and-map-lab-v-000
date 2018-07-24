@@ -22,6 +22,6 @@ function exactMatch(drivers, att_obj) {
 }
 
 function exactMatchToList(drivers, att_obj) {
-  const driver_objects = exactMatch(drivers,att_obj)
-  return drivers.map(function(driver) { return driver.name })
+  let driver_objects = exactMatch(drivers,att_obj)
+  return driver_objects.map(function(driver) { return driver.name })
 }
